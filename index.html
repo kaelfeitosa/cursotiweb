@@ -6,32 +6,65 @@
     <style>
       @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
-      header {
-        background-image: url("http://farm5.staticflickr.com/4161/34295915770_2db54c43e1_o.jpg");
-        background-size: cover;
-        height: 550px;
-        color: white;
-        padding-left: 50%;
+      html {
         font-family: 'Open Sans', sans-serif;
+        color: white;
       }
 
-      .texto-header {
-        position: absolute;
-        top: 35%;
+      body {
+        margin: 0;
       }
 
       h1, p {
+        margin: 0;
         font-weight: 300;
+      }
+
+      .cabecalho {
+        background-image: url("http://farm5.staticflickr.com/4161/34295915770_2db54c43e1_o.jpg");
+        background-size: cover;
+        height: 550px;
+        padding-left: 50%;
+        line-height: 1.2;
+      }
+
+      .texto {
+        position: absolute;
+        top: 30%;
+      }
+
+      .titulo {
+        font-size: 24px;
+        line-height: 0.4;
+      }
+
+      .data {
+        font-size: 64px;
+      }
+
+      .chamada {
+        font-size: 24px;
+      }
+
+      .botao {
+        border: solid 2px white;
+        border-radius: 8px;
+        background-color: transparent;
+        color: white;
+        width: 174px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 10px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="texto-header">
-        <h1>#GreveGeral</h1>
-        <p>30 de junho</p>
-        <p>O Brasil vai parar mais uma fez</p>
-        <button>Eu Apoio</button>
+    <header class="cabecalho">
+      <div class="texto">
+        <h1 class="titulo">#GreveGeral</h1>
+        <p class="data">30 de junho</p>
+        <p class="chamada">O Brasil vai parar mais uma fez</p>
+        <button class="botao">Eu Apoio</button>
       </div>
     </header>
   </body>
